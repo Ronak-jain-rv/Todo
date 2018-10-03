@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73877374-35e2-4cf0-9d9d-b3e20e9f5efa" name="Default Changelist" comment="" />
+    <list default="true" id="73877374-35e2-4cf0-9d9d-b3e20e9f5efa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -59,6 +61,7 @@
           <entry key="js" value="5038" />
           <entry key="json" value="189" />
           <entry key="ts" value="4901" />
+          <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -66,7 +69,7 @@
           <entry key="HTML" value="501" />
           <entry key="JSON" value="189" />
           <entry key="JavaScript" value="5038" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="TypeScript" value="4901" />
         </counts>
       </usages-collector>
@@ -151,8 +154,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/post.model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="424">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -256,7 +259,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -294,6 +297,11 @@
             <path>
               <item name="Backend-todo" type="b2602c69:ProjectViewProjectNode" />
               <item name="Backend-todo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Backend-todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Backend-todo" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Backend-todo" type="b2602c69:ProjectViewProjectNode" />
@@ -377,12 +385,20 @@
       <workItem from="1538385861162" duration="674000" />
       <workItem from="1538490761107" duration="350000" />
       <workItem from="1538543571911" duration="436000" />
-      <workItem from="1538544513688" duration="671000" />
+      <workItem from="1538544513688" duration="944000" />
     </task>
+    <task id="LOCAL-00001" summary="some changes made">
+      <created>1538546006069</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538546006069</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117046000" />
+    <option name="totallyTimeSpent" value="117319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -413,6 +429,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some changes made" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes made" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -658,8 +678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/post.model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        <state relative-caret-position="424">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
