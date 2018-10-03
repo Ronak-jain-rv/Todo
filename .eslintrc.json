@@ -1,0 +1,120 @@
+{
+  "env": {
+	"browser": true,
+	"commonjs": true,
+	"es6": true,
+	"node": true
+  },
+  "extends": [
+	"eslint:recommended",
+	"plugin:security/recommended",
+	"plugin:fp/recommended",
+	"plugin:import/errors",
+	"plugin:import/warnings"
+  ],
+  "parserOptions": {
+	"ecmaVersion": 2017,
+	"sourceType": "module"
+  },
+  "parser": "typescript-eslint-parser",
+  "plugins": [
+	"typescript",
+	"html",
+	"security",
+	"fp",
+	"angular",
+	"import",
+	"no-loops"
+  ],
+  "rules": {
+	"no-console": [
+	  "warn"
+	],
+	"import/no-unresolved": [
+	  "off"
+	],
+	"security/detect-non-literal-fs-filename": [
+	  "off"
+	],
+	"security/detect-object-injection": [
+	  "off"
+	],
+	"fp/no-unused-expression": [
+	  "off"
+	],
+	"fp/no-class": [
+	  "off"
+	],
+	"fp/no-delete": [
+	  "off"
+	],
+	"fp/no-this": [
+	  "off"
+	],
+	"fp/no-nil": [
+	  "off"
+	],
+	"fp/no-let": [
+	  "off"
+	],
+	"fp/no-mutating-methods": [
+	  "off"
+	],
+	"fp/no-mutation": [
+	  "off"
+	],
+	"fp/no-loops": [
+	  "off"
+	],
+	"complexity": [
+	  "error",
+	  {
+		"max": 15
+	  }
+	],
+	"max-lines-per-function": [
+	  "error",
+	  {
+		"max": 75,
+		"skipBlankLines": true,
+		"skipComments": true
+	  }
+	],
+	"max-depth": [
+	  "error",
+	  6
+	],
+	"indent": [
+	  "error",
+	  "tab"
+	],
+	"no-unused-vars": [
+	  "off"
+	],
+	"no-loops/no-loops": 2,
+	"curly":[
+	  "error"
+	],
+	/*"linebreak-style": [
+	  "error",
+	  "windows"
+	],*/
+	"quotes": [
+	  "error",
+	  "single"
+	],
+	"semi": [
+	  "error",
+	  "always"
+	],
+	"no-undef":[
+	  "off"
+	]
+  },
+  "globals": {
+	"angular": true
+  },
+  "settings": {
+	"angular": 2
+  }
+}

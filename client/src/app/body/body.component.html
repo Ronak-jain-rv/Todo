@@ -1,0 +1,105 @@
+<!--  	# ********************************************************************** #
+   		#    Copyright (C) by <Habilelabs>, <2018>							 #
+   		#    www.habilelabs.io													 #
+   		# ********************************************************************** # */ -->
+
+
+<!-- 	##########################################################################
+		#	Purpose: <purpose of file>											 #
+		#	SN  Date  			Change Description      		Modified By		 #
+		#	1   27/09/2018    		Base Version                Ronak Jain		 #
+		##########################################################################  -->
+
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+      <div class="toDoApp">
+
+
+        <!--Input Box-->
+        <div class="header">
+          <input type="text" class="newTodo" placeholder="What needs to be done?" autofocus #box
+          (keyup.enter)="addItem()" (blur)="addItem()" [(ngModel)] = "inputText">
+        </div>
+
+
+        <!--All Items-->
+        <div class="main" *ngIf="all==true">
+          <input class="toggleAll" type="checkbox" [(ngModel)]="selectedAll" (change)="selectAll();">
+          <ul class="toDoList">
+            <li *ngFor="let input of todo">
+              <div>
+                <input  type="checkbox" [(ngModel)]="input.completed" (change)="updateItem(input);">
+                <label>
+                  <a [ngClass]="{'checked': input.completed}">{{input.item}}</a>
+                </label>
+                <button (click)="deleteItem(input._id)">X</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+        <!--Active Items-->
+        <div class="main" *ngIf="active == true">
+          <input class="toggleAll" type="checkbox" [(ngModel)]="selectedAll" (change)="selectActive();">
+          <ul class="toDoList">
+            <li *ngFor="let input of activeTodo">
+              <div>
+                <input type="checkbox" [(ngModel)]="input.completed" (change)="updateActive(input);" ><!-- (change)="selectActive(i);">-->
+                <label>
+                  <a [ngClass]="{'checked': input.completed}">{{input.item}}</a>
+                </label>
+                <button (click)="deleteActive(input._id)">X</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <!--Completed Item-->
+        <div class="main" *ngIf="completed == true">
+          <input class="toggleAll" type="checkbox" [(ngModel)]="selectedAll" (change)="selectCompleted();">
+          <ul class="toDoList">
+            <li *ngFor="let input of completeTodo">
+              <div>
+                <input type="checkbox" [(ngModel)]="input.completed" (change)="updateCompleted(input);"><!-- (change)="selectCompleted(i);">-->
+                <label>
+                  <a [ngClass]="{'checked': input.completed}">{{input.item}}</a>
+                </label>
+                <button (click)="deleteCompleted(input._id)">X</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+        <!--Counter Buttons And Clear All-->
+        <div class="footer">
+          <span class="toDoCount">
+            "<strong>{{counter}}</strong> items left"
+          </span>
+          <ul class="filters">
+            <li><a href="#" [ngClass]="{'selected': all}" (click)="getAll()">All</a></li>
+            <li><a href="#/active" [ngClass]="{'selected':active}" (click)="getActive()">Active</a></li>
+            <li><a href="#/completed" [ngClass]="{'selected': completed}" (click)="getCompleted()">Complete</a></li>
+          </ul>
+          <button class="clearCompleted" (click)="clearCompleted()">Clear Completed</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-2"></div>
+
+  </div>
+</div>
